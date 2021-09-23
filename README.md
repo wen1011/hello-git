@@ -181,18 +181,50 @@ defaultBranch = main
 
 - 分支指令：
 
-```
+```markdown
 # 檢視分支
+
 $ git branch
 
-# * 是標注你所在的分支
+# 是標注你所在的分支
 
 # 建立分支
+
 $ git branch <branch-name>
 
 # 切換分支
-$ git switch <branch-name>
 
+$ git switch <branch-name>
 ```
 
 ## merge
+
+- 合併的基本用法
+  情境:
+  分支 main: 主分支
+  分支 feature-login: 這是用開發 login 功能的
+
+當我們把 login 功能完成後，必須把這個 login 分支「merge」回主分支去
+
+```markdown
+$ git switch main
+
+$ git merge feature-login
+
+# 如果兩個分支有提交過同一個檔案的修改，那就有可能發生衝突 confict
+
+# 就只能人工修改，可能需要跟同事討論
+
+# 解完衝突之後，就要再 commit 一次
+```
+
+-合併衝突的基本解法
+
+```markdown
+#「合併衝突」結果：
+
+$ git merge iss53
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+```
