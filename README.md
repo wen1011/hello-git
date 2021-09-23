@@ -68,10 +68,22 @@
 # 2. 設定環境變數
 
 ```markdown
-$ git config --global user.name "''" "ashleylai"
-$ git config --global user.email "ashleylai58@gmail.com"
+$ git config --global user.name "''" "username"
+$ git config --global user.email "useremail"
 
 ##### 確認設定的內容
 
 $ git config --list
 ```
+
+# 3. 建立 repo
+
+- repository (存儲庫) --> repo
+
+* 在要被控管的專案底下，輸入這個指令
+  > $ git init
+* 直接把整個 .git 檔案夾刪掉
+
+````markdown
+rm -r .git```
+````
