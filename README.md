@@ -231,7 +231,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 ```markdown
 <<<<<<< HEAD:index.html
 
-# <div id="footer">contact : email.support@github.com</div>
+<div id="footer">contact : email.support@github.com</div>
 
 <div id="footer">
 please contact us at support@github.com
@@ -246,3 +246,10 @@ please contact us at support@github.com
 please contact us at email.support@github.com
 </div>
 ```
+
+# 6. 了解 git flow
+
+- 1. 分支應用情境:
+     根據 Git Flow 的建議，主要的分支有 `master、develop、hotfix、release 以及 feature` 這五種分支，各種分支負責不同的功能。其中 Master 以及 Develop 這兩個分支又被稱做長期分支，因為他們會一直存活在整個 Git Flow 裡，而其它的分支大多會因任務結束而被刪除。
+     行內格式：
+     ![alt text](https://gitbook.tw/images/tw/gitflow/why-need-git-flow/flow.png "分支應用情境")
