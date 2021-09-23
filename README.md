@@ -177,12 +177,12 @@ defaultBranch = main
 
 - hello-git 是 master 可以執行以下指令把主分支改成叫 main：
 
-````$ git branch -m master main
-
+`$ git branch -m master main`
 
 - 分支指令：
 
-```# 檢視分支
+```
+# 檢視分支
 $ git branch
 
 # * 是標注你所在的分支
@@ -193,6 +193,6 @@ $ git branch <branch-name>
 # 切換分支
 $ git switch <branch-name>
 
-````
+```
 
 ## merge
