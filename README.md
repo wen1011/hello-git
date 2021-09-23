@@ -136,3 +136,62 @@ $ git checkout HEAD~2 test.txt
 
 $ git checkout HEAD
 ```
+
+```git log
+
+```
+
+相關指令
+
+```markdown
+# 查看提交紀錄
+
+$ git log
+
+# 查看特定檔案的紀錄
+
+$ git log <file>
+
+# 查看檔案修改細節
+
+$ git log -p a.txt
+
+# 可以搜尋關鍵字
+
+$ git log --grep="delete"
+
+# 查看內容是誰編寫的
+
+$ git blame test.txt
+```
+
+# 5: 建立分支與合併
+
+- 把 git 預設分支改成 main
+
+```markdown
+$ nano ~/.gitconfig  
+[init]
+defaultBranch = main
+```
+
+- hello-git 是 master 可以執行以下指令把主分支改成叫 main：
+
+```$ git branch -m master main
+
+```
+
+- 分支指令：
+
+```# 檢視分支
+$ git branch
+
+# * 是標注你所在的分支
+
+# 建立分支
+$ git branch <branch-name>
+
+# 切換分支
+$ git switch <branch-name>
+
+```
