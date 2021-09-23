@@ -71,7 +71,7 @@
 $ git config --global user.name "''" "username"
 $ git config --global user.email "useremail"
 
-##### 確認設定的內容
+# 確認設定的內容
 
 $ git config --list
 ```
@@ -84,6 +84,55 @@ $ git config --list
   > $ git init
 * 直接把整個 .git 檔案夾刪掉
 
-````markdown
-rm -r .git```
-````
+```markdown
+rm -r .git
+```
+
+# 4. 在 repo 中新增、修改、刪除檔案
+
+```markdown
+# 查看 git 的狀態
+
+$ git status
+
+# 把檔案加入
+
+$ git add test.txt
+
+# 提交這次的修改
+
+$ git commit -m "正確填寫這次 commit 的資訊"
+
+# 檢視這次修改的差異
+
+$ git diff
+
+# 已經加入過的檔案，又有修改的話，一樣要再 add 一次，才可以 commit
+
+$ git add test.txt
+$ git commit -m "xxxx"
+
+# 針對已經加入過的檔案，可以直接用以下指令提交
+
+$ git commit -am "xxxxx"
+
+# 可以「反悔」加入暫存區
+
+$ git restore --staged login.html
+
+# 反悔剛剛的修改
+
+$ git restore login.html
+
+# 讓檔案回到某個特定版本
+
+$ git checkout <commit> test.txt
+
+# 讓檔案回復到前兩個版本
+
+$ git checkout HEAD~2 test.txt
+
+# 回到現在版本
+
+$ git checkout HEAD
+```
