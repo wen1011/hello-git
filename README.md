@@ -6,7 +6,7 @@
 
 - 出處https://www.behance.net/gallery/32654151/Happy-Moon-Festival
 
-1. git<->github\gitlab
+` 1. git<->github\gitlab`
 
 - git
 
@@ -60,4 +60,4 @@
     * 與競爭對手相比，它的界面可能會更慢。
     * 存儲庫存在一些常見問題。
 
--
+` 2. 安裝 git`
