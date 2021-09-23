@@ -294,8 +294,62 @@ please contact us at email.support@github.com
 
 ctrl+x => y => enter
 
-- 2021 中秋節快樂，大家上課辛苦了
+---
 
-![Happy Moon Festival](https://mir-s3-cdn-cf.behance.net/project_modules/disp/fec74e32654151.568e2bc66a28a.gif "Optional title")
+# NodeJS
 
-- 出處https://www.behance.net/gallery/32654151/Happy-Moon-Festival
+- what is NodeJS ?
+  - Node.js 允許通過 JavaScript 和一系列模組來編寫伺服器端應用和網路相關的應用 => `NodeJS 讓你在瀏覽器以外執行 JS 的環境`
+  - Node.js 主要用於編寫像 Web 伺服器一樣的網路應用，這和 PHP 和 Python 是類似的。但是 Node.js 與其他語言最大的不同之處在於，PHP 等語言是阻塞的（只有前一條命令執行完畢才會執行後面的命令），而 Node.js 是非阻塞的`多條命令可以同時被執行，通過回呼函式得知命令已結束執行）。`
+
+# 安裝方法
+
+- 1. 安裝 nodejs
+  - 版本
+  * LTS: long-term support 長期維護版
+  * Current: 最新的、目前的
+  * Active LTS: 正在積極維護跟升級中的版本
+  * Maintenance LTS: 維護中的 LTS 直到生命週期結尾
+  * EOL: end of life
+- 2. mac:
+
+```markdown
+https://github.com/nvm-sh/nvm#install--update-script
+
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
+# 確認自己用的 shell 是哪一種後，修改相對應的設定檔
+
+$ echo $0
+
+# 根據 echo $0 的結果，下方選擇一個來確認
+
+$ cat ~/.zshrc
+$ cat ~/.bashrc
+
+# 關掉 terminal 重新啟動
+
+$ nvm -v
+```
+
+# start with NodeJS
+
+1. 在 github 上建立一個 hello-node 專案，勾選建立 readme
+2. 找到自己這個專案的 url，在 home 目錄下 clone 這個專案
+   - clone (若你想要取得現有 Git 倉儲的複本（例如：你想要開始協作的倉儲），那你需要使用的命令是 git clone。)
+   ```$ cd ~
+   # 在資料夾中建立 hello-node
+   $ git clone <https://github.com/wen1011/hello-node.git>
+   ```
+3. 用 vscode 開啟這個專案，在專案內建立 `檔案夾`
+4. 在 `檔案夾` 內建立 `js`
+5. 測試結果
+
+```markdown
+$ cd practice
+$ node sum.js
+
+# 如果不切換
+
+$ node practice/sum.js
+```
