@@ -284,15 +284,18 @@ please contact us at email.support@github.com
 
 ### 補充
 
-| Tables | Are |                          Cool |
-| ------ | :-: | ----------------------------: |
-| cd     | cd  |  切換目錄 change directory ｜ |
-| cd     | pwd |              顯示目前所在路徑 |
-| dir    | ls  | 列出目前檔案夾的檔案列表 list |
+| Tables |  Are  |                          Cool |
+| ------ | :---: | ----------------------------: |
+| cd     |  cd   |     切換目錄 change directory |
+| cd     |  pwd  |              顯示目前所在路徑 |
+| dir    |  ls   | 列出目前檔案夾的檔案列表 list |
+| mkdir  | mkdir |       建立新的檔案夾 make dir |
+| copy   |  cp   |                 複製檔案 copy |
+| move   |  mv   |                 移動檔案 move |
+| del    |  rm   |               刪除檔案 remove |
+| cls    | clear |              清除畫面上的內容 |
+| cat    |  cat  |                  印出檔案內容 |
 
-｜ mkdir ｜ mkdir 建立新的檔案夾 make dir ｜
-｜ copy ｜ cp ｜複製檔案 copy ｜
-｜ move ｜ mv ｜ 移動檔案 move ｜
-｜ del ｜ rm ｜ 刪除檔案 remove ｜
-｜ cls ｜ clear ｜清除畫面上的內容｜
-｜ cat ｜ cat ｜ 印出檔案內容｜
+- nano
+
+ctrl+x => y => enter
