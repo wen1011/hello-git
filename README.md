@@ -137,10 +137,6 @@ $ git checkout HEAD~2 test.txt
 $ git checkout HEAD
 ```
 
-```git log
-
-```
-
 相關指令
 
 ```markdown
@@ -218,7 +214,7 @@ $ git merge feature-login
 # 解完衝突之後，就要再 commit 一次
 ```
 
--合併衝突的基本解法
+- 合併衝突的基本解法
 
 ```markdown
 #「合併衝突」結果：
@@ -227,4 +223,18 @@ $ git merge iss53
 Auto-merging index.html
 CONFLICT (content): Merge conflict in index.html
 Automatic merge failed; fix conflicts and then commit the result.
+```
+
+- 1. Git 沒有自動產生新的合併提交， 它會暫停下來等你解決（resolve）衝突； 在合併衝突發生後的任何時候，如果你要看看哪些檔案還沒有合併，可以使用 git status
+- 2. 它會列出所有有合併衝突且仍未解決的檔案（譯註：列在 Unmerged paths: 下面）； Git 會在有衝突的檔案裡加入標準的「衝突解決（conflict-resolution）」標記，因此你可以手動開啟它們以解決這些衝突； 你的檔案會包含類似下面這樣子的區段：
+
+```<<<<<<< HEAD:index.html
+<div id="footer">contact : email.support@github.com</div>
+=======
+<div id="footer">
+please contact us at support@github.com
+</div>
+>>>>>>> login:index.html
+
+可以看到 ======= 隔開的上半部分是 HEAD（即 main 分支，在執行合併命令前所切換過去的分支）中的內容，下半部分則是在login 分支中的內容； 解決衝突的辦法無非是二選一，或者由你自己合併內容； 比如你可以把這整段內容替換成以下內容而解決這個衝突：
 ```
