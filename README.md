@@ -277,3 +277,7 @@ please contact us at email.support@github.com
 ## Feature 分支
 
 - 當要開始新增功能的時候，就是使用 Feature 分支的時候了。Feature 分支都是從 Develop 分支來的，完成之後會再併回 Develop 分支。
+
+## 如何開始使用
+
+- https://gitbook.tw/chapters/gitflow/using-git-flow.html
